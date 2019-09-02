@@ -1,0 +1,54 @@
+@charset "UTF-8"; /* 必ず1行目に記述 ＆ 左スペースは不可 */
+
+/* div要素の代わりに使う要素ばかりなのでdisplay: block;でブロック要素に指定 */
+header,footer,main,nav,article,aside,section{
+  display: block;
+}
+
+html{
+  background-image: url("bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0 70px;
+  background-attachment: scroll;
+  background-color: #f0f8ff;
+}
+
+/* ヘッダを固定する場合 */
+header{
+  background-color:#adf;
+  box-shadow:0 2px 8px rgba(30,30,80,.3);
+  left:0;
+  line-height:1;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:30;
+}
+
+.menu{
+  position: absolute;
+  overflow: hidden;
+  top: 5px;
+  right: 5px;
+}
+.menu li{
+  float: left;
+  width: 120px;
+  list-style: none;
+  shape-outside: none;
+  padding: 8px 5px;
+  margin: 0px 5px 10px 5px;
+  background-color: #abf;
+  box-shadow:2px 2px 5px rgba(30,30,80,0.3);
+  text-align: center;
+}
+.menu li a{
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+.menu li:hover{
+  background-color: #aae;
+  box-shadow:1px 1px 5px rgba(30,30,80,0.3);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コード(utf-8) -->
+    <meta charset="utf-8">
+    <!-- IEで互換表示させない -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- レスポンシブ表紙の為 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- メタディスクリプション(90文字を超えない) -->
+    <meta name="description" content="ここにディスクリプションのテキストが入ります">
+    <!-- タイトル(35文字以内) -->
+    <title>タイトル</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み(必ずjQueryの後に読み込む) -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- fontawesome読み込み -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- スタイルシート(template.css)の読み込み -->
+    <link rel="stylesheet" href="template.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>メインタイトル</h1>
+
+      <nav class="menu"><!-- ナビゲーション -->
+          <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="item.html">商品一覧</a></li>
+            <li><a href="shop.html">店舗紹介</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main><!-- メインコンテンツ(1ページに1回のみ) -->
+
+      <article class="contents"><!-- このブロックだけで完結できる内容 -->
+        <p>header要素・・・ページの上部のブロックに使う</p>
+        <p>footer要素・・・ページの下部のブロックに使う</p>
+        <p>main要素・・・ページの主要なブロックに使う。ページに1度しか使えない</p>
+        <p>nav要素・・・主要なナビゲーションを定義する</p>
+        <p>artile要素・・・ページに関連するブロックで独立しても成り立つブロックに使う</p>
+        <p>aside要素・・・ページに関連がない。または補足情報のブロックに使う</p>
+        <p>section要素・・・「章」のブロックに使う</p>
+        <p>sectionタグ内には、見出し要素が必要</p>
+        <p>IE9より前のバージョンに対応させる場合には、html5shiv.jsを使う</p>
+      </article>
+
+      <aside class="banner"><!-- ページの内容と関連がないブロック(補足情報,バナー) -->
+        <p>アサイド、補足情報、バナーなど</p>
+      </aside>
+
+      <section><!-- 章　見出し要素(h1〜h6)が必須 -->
+        <h2>見出し</h2>
+        <p>本文</p>
+      </section>
+
+
+    </main>
+    <footer>
+      <!-- フッター -->
+    </footer>
+  </body>
+</html>
